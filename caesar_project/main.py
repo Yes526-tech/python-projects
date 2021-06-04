@@ -5,3 +5,4 @@ length_alphabet = len(alphabet)
 plain_text = input("text:")
 
 def encrypt(text, shift):
+print("hello")
