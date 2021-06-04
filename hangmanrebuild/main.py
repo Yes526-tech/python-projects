@@ -1,4 +1,5 @@
 import random
+from replit import clear
 #from hangman_words import word_list
 stages = ['''
   +---+s
@@ -69,6 +70,7 @@ lives = 6
 end_of_game = False
 while not end_of_game:
     guess = input("guess a letter:").lower()
+    clear()
     if guess in spaces:
         print(f"you've already guessed {guess}")
     for location in range(length):
