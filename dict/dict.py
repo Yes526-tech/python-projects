@@ -1,31 +1,14 @@
-student_scores = {
-    "Harry": 81,
-    "Ron": 78,
-    "Hermione": 99,
-    "Draco": 74,
-    "Neville": 62,
-}
-# 🚨 Don't change the code above 👆
+def narcissistic(value):
 
-# TODO-1: Create an empty dictionary called student_grades.
-student_grades = {}
-for student in student_scores:
-    if student_scores[student] > 90 and student_scores[student] <= 100:
-        outstanding_student = " outstanding"
-        student_grades[student] = outstanding_student
-    elif student_scores[student] > 80 and student_scores[student] <= 90:
-        exceeds_expectations_student = " exceeds expectations"
-        student_grades[student] = exceeds_expectations_student
-    elif student_scores[student] > 70 and student_scores[student] <= 80:
-        acceptable_student = " acceptable"
-        student_grades[student] = acceptable_student
-    elif student_scores[student] <= 70:
-        fail_student = " fail"
-        student_grades[student] = fail_student
+    num_total_digit = 0
+    length = len(str(value))
 
+    for num in str(value):
+        num_total_digit += int(num) ** length
+    if num_total_digit == int(value):
+        is_narcissistic = True
+    else:
+        is_narcissistic = False
 
-# TODO-2: Write your code below to add the grades to student_grades.👇
-
-
-# 🚨 Don't change the code below 👇
-print(student_grades)
+    return is_narcissistic
+narcissistic(153)
