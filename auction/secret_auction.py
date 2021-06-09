@@ -1,9 +1,72 @@
+import itertools
+from functools import reduce
+
+tasks = [
+    {
+        'name': 'Write for Envato Tuts+',
+        'duration': 120
+    },
+    {
+        'name': 'Work out',
+        'duration': 60
+    },
+    {
+        'name': 'Procrastinate on Duolingo',
+        'duration': 240
+    }
+]
+
+# result = sum(task['duration'] for task in tasks)
+# result2 = min(task['duration'] for task in tasks)
+# print(result2)
+
+# OOP
+
+def filterByDuration(duration):
+    return list(filter(lambda x: x['duration'] == duration, tasks))
+
+result = filterByDuration(60)
+
+print(result)
+# sum(task['duration'] for task in tasks)
+
+
+# result = reduce((lambda a, b: a + b['duration']), tasks, 0)
+# print(result)
+# def sum_task_duration():
+#     total = 0
+#     for task in tasks:
+#         total += task["duration"]
+#     print(total)
+#
+# sum_task_duration()
+# def add_task(name, duration):
+#     tasks.insert(len(tasks), {'name': name, "duration": duration})
+#
+#
+# def add_task2(name, duration):
+#     tasks.insert(0, {'name': name, "duration": duration})
+#
+#
+# add_task('Tidy your room', 20)
+# add_task2('Tidy your room2', 200)
+
+
+# print(tasks)
+
 # users = {
-#     11: {id: 11, "name": 'Adam', "age": 23, "group": 'editor'},
-#     47: {id: 47, "name": 'John', "age": 28, "group": 'admin'},
-#     85: {id: 85, "name": 'William', "age": 34, "group": 'editor'},
-#     97: {id: 97, "name": 'Oliver', "age": 28, "group": 'admin'}
+#     0: {"name": 'Adam', "age": 23},
+#     1: {"name": 'John', "age": 28},
+#     2: {"name": 'William', "age": 34},
+#     3: {"name": 'Oliver', "age": 28}
 # }
+#
+# group = {
+#     "admin": [0, 1],
+#     "editor": [2, 3]
+# }
+
+
 #
 # def make_admin(id):
 #     for user_id in users.keys():
@@ -40,4 +103,3 @@
 #         if name_id == id:
 #             print(users[name_id]["name"])
 # getIdByName(85)
-
