@@ -1,5 +1,5 @@
-from functools import reduce
-
+# #from functools import reduce
+# import collections
 # # inventors = [
 # #     {"first": "Albert", "last": "Einstein", "year": 1879, "passed": 1955},
 # #     {"first": "Isaac", "last": "Newton", "year": 1643, "passed": 1727},
@@ -128,3 +128,15 @@ inventors = [
 # x = reduce(lambda a, b: a + b, ages)
 # print(x)
 # print(sum(map(lambda inventor: inventor["passed"] - inventor["year"], inventors)))
+
+# List Comprehensions
+
+# 1. Filter the list of inventors for those who were born in the 1500's
+
+# people = [inventor for inventor in inventors if inventor["year"] >= 1500 and inventor["year"] < 1600]
+#
+# print(people)
+#
+# # 2. Give us a list of the inventors first and last names
+# people = [f"{inventor['first']} {inventor['last']}" for inventor in inventors]
+# print(people)

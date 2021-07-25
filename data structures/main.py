@@ -11,7 +11,7 @@ items = [
 
 
 
-prices = list(map(lambda  item: item[1], items))
+prices = list(map(lambda  item: item[0], items))
 print(prices)
 
 
