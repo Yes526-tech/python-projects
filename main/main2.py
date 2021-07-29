@@ -60,3 +60,28 @@ print(f"16 - {odd_negative_numbers}")
 numbers_plus_5 = [number + 5 for number in numbers]
 print(f"17 - {numbers_plus_5}")
 # BONUS Make a variable named "primes" that is a list containing the prime numbers in the numbers list. *Hint* you may want to make or find a helper function that determines if a given number is prime or not.
+fruit = 'Apple'
+
+x = ['Even' if 4 + number % 2 == 0 else 'Odd' for number in range(10)]
+
+y = 'Yes' if fruit == 'Apple' else 'No'
+
+
+if fruit == "Apple":
+    y = "yes"
+else:
+    y = "no"
+
+if y == 'Yes':
+    z = 0
+else:
+    z = 1
+
+
+
+
+
+
+print(x)
+
+# ['Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd']

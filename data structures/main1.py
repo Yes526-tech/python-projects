@@ -74,6 +74,9 @@ inventors = [
 #
 # # 2. Give us a list of the inventors first and last names
 # people = [f"{inventor['first']} {inventor['last']}" for inventor in inventors]
-# print(people)
+# print(people
 
 
+
+
+print(a == b)
